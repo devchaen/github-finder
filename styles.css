@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 35px;
+    position: relative;
+    top: 0;
+    background-color: #f5f8fa;
+    color: black;
+    text-align: left;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    border-bottom: 2px solid #dee3e8;
+}
+
+.github-mark {
+    width: 30px;
+    margin: 0 10px 0 30px;
+}
+
+.github-mark img {
+    width: 100%;
+}
+
+main {
+    min-height: 730px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#searchBox {
+    height: 6vh;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border: 1px solid #dee3e8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchTitle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+}
+
+#searchZone {
+    height: 100%;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#username {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+#searchButton {
+    margin-left: 5px;
+    padding: 0 15px;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    margin: 10px 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dee3e8;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.profile-left {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #dee3e8;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-left a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.profile-right {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info-rows {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-info-row {
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 7px 15px;
+    border: 1px solid #dee3e8;
+    border-radius: 7px;
+    background-color: #0968da;
+    color: #f5f8fa;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info-row:last-child {
+    margin-right: 0;
+}
+
+.contribute-calendar {
+    padding: 10px 0 10px 10px;
+}
+
+.contribute-calendar img {
+    height: 130px;
+    object-fit: cover;
+}
+
+.profile-info-column {
+    text-align: left;
+    font-weight: 600;
+    width: 750px;
+}
+
+.repo-container {
+    border: 1px solid #dee3e8;
+    border-radius: 8px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.repo-container h2 {
+    margin: 5px 0 5px 20px;
+}
+
+.repo-list {
+    width: 100%;
+}
+
+.repo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    border: 1px solid #dee3e8;
+    border-radius: 20px;
+}
+
+.repo-title {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.repo-name {
+    width: 200px;
+    height: 100%;
+    background-color: #f5f8fa;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #dee3e8;
+    border-left: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+}
+
+.repo-name a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo-title span {
+    width: 65%;
+    margin-left: 15px;
+    text-align: left;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.repo-info {
+    margin-right: 20px;
+    padding: 5px 10px 5px 0;
+    background-color: #f5f8fa;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -5px #333;
+}
+
+.repo-info span {
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #f5f8fa;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+}
