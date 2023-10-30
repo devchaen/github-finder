@@ -5,7 +5,10 @@ class UI {
     }
 
     showProfile(userData) {
-        this.octocat.setAttribute('display', 'none');
+        if(this.octocat){
+            this.octocat.setAttribute('display', 'none');
+        }
+        
         this.results.innerHTML = `
             <div class="profile-container">
                 <div class="profile-left">
