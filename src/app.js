@@ -7,7 +7,13 @@ document.getElementById('searchButton').addEventListener('click', function() {
     if (username !== '') {
         github.getUserData(username)
             .then(data => {
-                ui.showProfile(data);
+                if (data) {
+                    ui.showProfile(data);
+                }
+                else {
+                    console.log('no data');
+                    ui.userNotFoundMessage();
+                }  
             });
     }
 });

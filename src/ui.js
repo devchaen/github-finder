@@ -1,11 +1,11 @@
 class UI {
     constructor() {
         this.results = document.getElementById('results');
+        this.octocat = document.getElementById('octocat');
     }
 
     showProfile(userData) {
-        console.log(userData.repos);
-        
+        this.octocat.setAttribute('display', 'none');
         this.results.innerHTML = `
             <div class="profile-container">
                 <div class="profile-left">
@@ -59,5 +59,17 @@ class UI {
                 </div>
             </div>`
         ).join('');
+    }
+
+    userNotFoundMessage() {
+        this.octocat.setAttribute('display', '');
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <div class="not-found">
+                <h2>Cannot Find the User</h2>
+                <p>Please check your spelling and try again.</p>
+            </div>
+            `;
+        this.results.appendChild(div);
     }
 }
